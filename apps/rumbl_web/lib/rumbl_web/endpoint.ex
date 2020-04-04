@@ -6,8 +6,8 @@ defmodule RumblWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   @session_options [
     store: :cookie,
-    key: "_rumbl_web_key",
-    signing_salt: "QBpeGDfY"
+    key: "_rumbl_key",
+    signing_salt: "1DEchyWz"
   ]
 
   socket "/socket", RumblWeb.UserSocket,

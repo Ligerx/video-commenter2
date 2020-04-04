@@ -9,9 +9,8 @@ defmodule RumblWeb.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      RumblWeb.Endpoint
-      # Starts a worker by calling: RumblWeb.Worker.start_link(arg)
-      # {RumblWeb.Worker, arg},
+      RumblWeb.Endpoint,
+      RumblWeb.Presence
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
